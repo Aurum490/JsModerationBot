@@ -9,6 +9,7 @@
   "author": "HerathMLG",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "wokcommands": "^1.2.1"
   }
 }
