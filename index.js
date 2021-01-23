@@ -32,18 +32,17 @@ client.on('message', message => {
 	}
 });
 
-client.on('message', message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
-	if (message.content === `${prefix}ping`) {
-		message.channel.send('Pong!');
-	} else if (message.content === `${prefix}Hi`) {
-		message.channel.send('Hello');
-	} else if (message.content === `${prefix}name`) {
-		message.channel.send(message.guild.name);
-	} else if (message.content === `${prefix}members`) {
-		message.channel.send(`Total Members: ${message.guild.memberCount}`);
-	} else if (message.content === `${prefix}me`) {
-		message.channel.send(`Username: ${message.author.username}`);
-		message.channel.send(`ID: ${message.author.id}`);
-	}
-});
+//	if (!message.content.startsWith(prefix) || message.author.bot) return;
+//	if (message.content === `${prefix}ping`) {
+//		message.channel.send('Pong!');
+//	} else if (message.content === `${prefix}Hi`) {
+//		message.channel.send('Hello');
+//	} else if (message.content === `${prefix}name`) {
+//		message.channel.send(message.guild.name);
+//	} else if (message.content === `${prefix}members`) {
+//		message.channel.send(`Total Members: ${message.guild.memberCount}`);
+//	} else if (message.content === `${prefix}me`) {
+//		message.channel.send(`Username: ${message.author.username}`);
+//		message.channel.send(`ID: ${message.author.id}`);
+//	}
+// });
