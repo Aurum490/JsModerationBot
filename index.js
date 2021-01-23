@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client;
-const { prefix, word_array, bot_age, bot_info } = require('./config.json');
+const {
+	prefix,
+	word_array,
+	bot_age,
+	bot_info,
+} = require('./config.json');
 client.on('ready', () => {
 	console.log(prefix);
 	console.log(bot_age);
@@ -18,5 +23,9 @@ client.on('message', message => {
 		message.channel.send('Pong!');
 	} else if (message.content === `${prefix}Hi`) {
 		message.channel.send('Hello');
+	} else if (message.content === `${prefix}name`) {
+		message.channel.send(message.guild.name);
+	} else if (message.content === `${prefix}members`) {
+		message.channel.send(`Total Members: ${message.guild.memberCount}`);
 	}
 });
