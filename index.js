@@ -30,7 +30,11 @@ client.on('message', message => {
 
 		message.channel.send(`Command name: ${command}\nArguments: ${args}`);
 	}
-	else if (message.content === `${prefix}ping`) {
+});
+
+client.on('message', message => {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (message.content === `${prefix}ping`) {
 		message.channel.send('Pong!');
 	} else if (message.content === `${prefix}Hi`) {
 		message.channel.send('Hello');
