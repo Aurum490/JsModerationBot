@@ -1,3 +1,9 @@
 {
-    "token": "ODAyMTUzNDM0NDAwMjkyODY0.YArFmg.a0KIb4BY_9eya4eqKx-ZifC-rGs"
+    "prefix": "!",
+    "bot_age": "1",
+    "word_array": ["Hi", "Bye", "This is array"],
+    "bot_info": {
+        "name": "ModerationBot",
+        "version": "1.0"
+    }
 }
